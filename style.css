@@ -26,6 +26,15 @@ header {
     justify-content: center;
 }
 
+
+header > nav > ul > a > span {
+    display: flex;
+    position: relative;
+    right: 65%;
+    top: 8px;
+    color: white;
+}
+
 header > nav > ul > li {
     list-style-type: none;
     display: inline-block;
