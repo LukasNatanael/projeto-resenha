@@ -14,30 +14,104 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor3);
 }
-
+main > header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d90429
+}
 
 main > header > nav > a#home {
-    color: black;
+    position: relative;
+    left: -10%;
+    top: 15%;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
+
+main > header > nav > a#home:hover {
+    border: 1px solid rgba(0, 0, 0, 0.548);
+    color: rgba(0, 0, 0, 0.548);
 }
 
 main > header > nav > fieldset {
-    width: 300px;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid black;
     /* display: flex; */
     justify-content: center;
     display: inline-block;
+    border: 1px solid white;
 }
 
 main > header > nav > fieldset > a {
     text-decoration: none;
-    padding-left: 10px;
-    color: black;
+    padding: 15px;
+    color: white;
+}
+
+main > header > nav > fieldset > a:hover {
+    color: rgba(0, 0, 0, 0.548);
+}
+
+main > header > input[type=search] {
+    position: relative;
+    left: 2%;
+    margin-top: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+    height: 25px;
+    padding: 8px;
+}
+
+
+main > section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+div#capa {
+    background-image: url(img/a-baleia.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 518px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+section > article {
+    max-width: 500px;
+    padding: 15px;
+}
+
+section > article > h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+section > article > p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+section > article > h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+main > section > article > input[type=range] {
+    position: relative;
+    left: 35%;
 }
