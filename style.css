@@ -82,7 +82,6 @@ main > section {
 div#capa {
     background-image: url(img/a-baleia.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
     height: 518px;
     width: 350px;
     border-radius: 10px;
