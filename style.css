@@ -79,12 +79,23 @@ main > section {
     padding: 20px;
 }
 
-div#capa {
-    background-image: url(img/a-baleia.jpg);
-    background-repeat: no-repeat;
-    height: 518px;
-    width: 350px;
+
+.zoom {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     border-radius: 10px;
+}
+
+.zoom img {
+    border-radius: 10px;
+    max-width: 95%;
+    max-height: 95%;
+    transition: all 0.3s;
+}
+
+.zoom img:hover {
+    transform: scale(1.1);   
 }
 
 section > article {
